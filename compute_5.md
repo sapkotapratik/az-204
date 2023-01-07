@@ -10,6 +10,15 @@
 
 ![image](https://user-images.githubusercontent.com/24469318/211132179-29f6d83d-a859-4278-ac6d-403a0297815b.png)
 
+az aks create --resource-group readit-app-rg-2023 --name cart-aks --node-count 1 --generate-ssh-keys --attach-acr readitacr2023 --node-vm-size Standard_DS2_v2
+
+
+az aks install-cli
+
+set PATH=%PATH%;"C:\Users\adibi\.azure-kubectl"
+
+az aks get-credentials --resource-group readit-app-rg-2023 --name cart-aks
+
 
 
 
